@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.brand img {
+  height: 3.2rem;
+  width: auto;
+}
+
+.nav-container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: blue;
+}
