@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Rocket from './Components/Rocket';
-import Mission from './Components/Mission';
+import Mission from './Components/ourmission/Mission';
 import Profile from './Components/Profile';
 
 function App() {
