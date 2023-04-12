@@ -10,7 +10,7 @@ const Mission = () => {
     Dispatch(fetchMissions());
   }, [Dispatch]);
   const MISSIONS = useSelector((state) => state.missions);
-  console.log(MISSIONS);
+  // console.log(MISSIONS);
   return (
     <div className="table">
       <table>
@@ -19,15 +19,15 @@ const Mission = () => {
             <th>Mission Name</th>
             <th>Description</th>
             <th>Status</th>
-            <th />
           </tr>
         </thead>
         <tbody>
           <tr>
-            {MISSIONS.map((mission) => (
+            {MISSIONS.missions.map((mission) => (
               <Missionitem
                 name={mission.name}
-                key={mission.mission_id}
+                key={mission.id}
+                id={mission.id}
                 description={mission.description}
                 reserved={mission.reserved}
               />
