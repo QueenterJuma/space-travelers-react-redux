@@ -40,3 +40,13 @@
   text-decoration: none;
   color: blue;
 }
+
+.rockets-container {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 3rem;
+}
+
+.rockets-container img {
+  width: 12rem;
+}
