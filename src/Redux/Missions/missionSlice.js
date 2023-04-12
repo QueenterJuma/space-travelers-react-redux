@@ -48,13 +48,11 @@ const missionSlice = createSlice({
       };
     });
     builder.addCase(fetchMissions.fulfilled, (state, action) => {
-      const isLoading = false;
       const missions = action.payload;
-
       return {
         ...state,
         missions,
-        isLoading,
+        isLoading: false,
       };
     });
   },
