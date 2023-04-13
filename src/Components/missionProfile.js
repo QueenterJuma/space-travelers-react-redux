@@ -7,7 +7,7 @@ const MissionProfile = () => {
   return (
     <div className="mission-list">
       <h2>My Mission</h2>
-      <table>
+      <table className="profile-table">
         <tbody>
           {missions
             .filter((mission) => mission.join)
