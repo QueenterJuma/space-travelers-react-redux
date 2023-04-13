@@ -10,7 +10,6 @@ const Mission = () => {
     Dispatch(fetchMissions());
   }, [Dispatch]);
   const MISSIONS = useSelector((state) => state.missions);
-  console.log(MISSIONS.mission);
   return (
     <div className="table">
       <table>
@@ -19,7 +18,7 @@ const Mission = () => {
             <th>Mission Name</th>
             <th>Description</th>
             <th>Status</th>
-            <th aria-label="join" />
+            <th aria-label="member" />
           </tr>
         </thead>
         <tbody>

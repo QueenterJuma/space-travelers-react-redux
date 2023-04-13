@@ -15,6 +15,7 @@ export const fetchMissions = createAsyncThunk(
       id: mission.mission_id,
       name: mission.mission_name,
       description: mission.description,
+      join: false,
     }));
     return newArr;
   },
