@@ -31,5 +31,6 @@ export default function rocketsReducer(state = initialState, action) {
 export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async () => {
   const response = await fetch(url);
   const data = await response.json();
-  return data;
+  console.log('Rockets', data);
+  // return data;
 });
