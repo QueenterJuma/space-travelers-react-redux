@@ -1,8 +1,10 @@
 import React from 'react';
+import MissionProfile from './missionProfile';
 
 const Profile = () => (
   <div>
-    <h1>Profile page</h1>
+    <MissionProfile />
+    <h1>Rocket</h1>
   </div>
 );
 
