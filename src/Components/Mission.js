@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import '../style/Mission.css';
 import { fetchMissions } from '../Redux/Missions/missionSlice';
 import Missionitem from './MissionItem';
+import '../style/Mission.css';
 
 const Mission = () => {
   const Dispatch = useDispatch();
@@ -10,7 +10,6 @@ const Mission = () => {
     Dispatch(fetchMissions());
   }, [Dispatch]);
   const MISSIONS = useSelector((state) => state.missions);
-  // console.log(MISSIONS);
   return (
     <div className="table">
       <table>
@@ -19,20 +18,19 @@ const Mission = () => {
             <th>Mission Name</th>
             <th>Description</th>
             <th>Status</th>
+            <th aria-label="member" />
           </tr>
         </thead>
         <tbody>
-          <tr>
-            {MISSIONS.missions.map((mission) => (
-              <Missionitem
-                name={mission.name}
-                key={mission.id}
-                id={mission.id}
-                description={mission.description}
-                reserved={mission.reserved}
-              />
-            ))}
-          </tr>
+          {MISSIONS.missions.map((mission) => (
+            <Missionitem
+              name={mission.name}
+              key={mission.id}
+              id={mission.id}
+              description={mission.description}
+              reserved={mission.reserved}
+            />
+          ))}
         </tbody>
       </table>
     </div>

@@ -9,7 +9,7 @@ const Missionitem = ({
   const Dispatch = useDispatch();
   return (
     <tr>
-      <th>{name}</th>
+      <td>{name}</td>
       <td>{description}</td>
       <td>
         {reserved ? <span>Active Member</span> : <span>Not A Member</span>}
