@@ -6,10 +6,12 @@ import '../style/Mission.css';
 
 const Mission = () => {
   const Dispatch = useDispatch();
-  useEffect(() => {
-    Dispatch(fetchMissions());
-  }, [Dispatch]);
   const MISSIONS = useSelector((state) => state.missions);
+  useEffect(() => {
+    if (!MISSIONS.missions.length) {
+      Dispatch(fetchMissions());
+    }
+  }, [Dispatch]);
   return (
     <div className="table">
       <table>
