@@ -15,7 +15,7 @@ const Rockets = () => {
     <div className="rockets">
       {rockets.map((rocket) => (
         <Rocket
-          image={rocket.flickr_images}
+          image={rocket.flickr_images[0]}
           key={rocket.id}
           name={rocket.name}
           description={rocket.description}
