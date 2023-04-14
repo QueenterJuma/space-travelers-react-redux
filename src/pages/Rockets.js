@@ -9,15 +9,15 @@ const Rockets = () => {
     dispatch(fetchRockets());
   }, [dispatch]);
 
-  const fetchedRockets = useSelector((state) => state.rockets || {});
+  const { rockets } = useSelector((store) => store.rockets);
 
   return (
     <div className="rockets">
-      {fetchedRockets.map((rocket) => (
+      {rockets.map((rocket) => (
         <Rocket
           image={rocket.flickr_images}
           key={rocket.id}
-          title={rocket.rocket_name}
+          name={rocket.name}
           description={rocket.description}
           id={rocket.id}
         />
