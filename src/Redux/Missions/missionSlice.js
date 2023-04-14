@@ -15,6 +15,7 @@ export const fetchMissions = createAsyncThunk(
       id: mission.mission_id,
       name: mission.mission_name,
       description: mission.description,
+      join: false,
     }));
     return newArr;
   },
@@ -27,7 +28,7 @@ const missionSlice = createSlice({
     joinMission: (state, action) => {
       const mission = state.missions.find((mision) => mision.id === action.payload);
       if (mission) {
-        mission.reserved = !mission.reserved;
+        mission.join = !mission.join;
       }
     },
     leaveMission: (state, action) => {
@@ -35,7 +36,7 @@ const missionSlice = createSlice({
         (mision) => mision.id === action.payload,
       );
       if (mission) {
-        mission.reserved = !mission.reserved;
+        mission.join = !mission.join;
       }
     },
   },

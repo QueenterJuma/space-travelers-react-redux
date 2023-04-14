@@ -14,3 +14,7 @@ th {
 tr:nth-child(even) {
   background-color: #ddd;
 }
+
+.profile-table {
+  width: 40%;
+}
