@@ -67,3 +67,16 @@
   border-radius: 0.2rem;
   font-weight: 400;
 }
+
+.reservation {
+  padding: 0.3rem;
+  background: rgb(20, 147, 221);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 1.5rem 0.2rem;
+}
+
+.cancel-button {
+  padding: 0.4rem;
+}

@@ -20,6 +20,7 @@ const Rockets = () => {
           name={rocket.name}
           description={rocket.description}
           id={rocket.id}
+          reserved={rocket.reserved}
         />
       ))}
     </div>
