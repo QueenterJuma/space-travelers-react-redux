@@ -11,7 +11,7 @@ const Mission = () => {
     if (!MISSIONS.missions.length) {
       Dispatch(fetchMissions());
     }
-  }, [Dispatch]);
+  }, [Dispatch, MISSIONS.missions.length]);
   return (
     <div className="table">
       <table>

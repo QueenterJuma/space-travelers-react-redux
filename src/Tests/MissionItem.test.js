@@ -1,22 +1,24 @@
 import React from 'react';
-import render from 'react-test-renderer';
+// import render from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { render, screen, fireEvent } from '@testing-library/react';
 import configureMockStore from 'redux-mock-store';
 import store from '../Redux/store';
-import Missionitem from '../components/MissionItem';
+import Missionitem from '../Components/MissionItem';
 
 it('renders MissionItem correctly', () => {
-  const tree = render.create(
-    <React.StrictMode>
-      <Provider store={store}>
-        <Router>
-          <Missionitem />
-        </Router>
-      </Provider>
-    </React.StrictMode>,
-  ).toJSON();
+  const tree = render
+    .create(
+      <React.StrictMode>
+        <Provider store={store}>
+          <Router>
+            <Missionitem />
+          </Router>
+        </Provider>
+      </React.StrictMode>,
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
 
