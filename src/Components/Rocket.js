@@ -1,19 +1,22 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import PropTypes from 'prop-types';
+// import { reserveRocket, cancelReservation } from '../Redux/rockets/rocketsSlice';
 
-const Rocket = () => (
-  <div className="rockets-container">
-    <img src={logo} alt="rocket" />
+const Rocket = ({ name, description, image }) => (
+  <div className="rocket-container">
+    <img src={image} alt="rocket" />
     <div className="content-container">
-      <h2>Rocket name</h2>
-      <p>
-        Aliquid expetenda cu qui, quas dolor mucius te eum, per no porro
-        equidem. Ex fabellas tacimates vituperata pri. Mei sint everti iisque
-        at, ei fabellas liberavisse eum. His te eius erat principes.
-      </p>
-      <button type="submit">Reserve Rocket</button>
+      <h2>{name}</h2>
+      <p>{description}</p>
+      <button type="submit" className="reserve-button">Reserve Rocket</button>
     </div>
   </div>
 );
+
+Rocket.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 export default Rocket;

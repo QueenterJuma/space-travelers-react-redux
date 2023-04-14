@@ -41,16 +41,29 @@
   color: blue;
 }
 
-.rockets-container {
+.rocket-container {
   display: flex;
-  gap: 2rem;
-  margin: 1rem 3rem;
+  gap: 1.5rem;
+  margin: 1.6rem 4rem;
 }
 
-.rockets-container img {
-  width: 12rem;
+.rocket-container img {
+  width: 15rem;
+}
+
+.content-container {
+  width: 65%;
 }
 
 .content-container h2 {
   font-size: 1.2rem;
+}
+
+.reserve-button {
+  padding: 0.7rem;
+  background: rgb(0, 140, 255);
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  font-weight: 400;
 }
