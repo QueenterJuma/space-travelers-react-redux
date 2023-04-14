@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { reserveRocket, cancelReservation } from '../Redux/rockets/rocketsSlice';
+// import { reserveRocket, cancelReservation } from '../Redux/rockets/rocketsSlice';
 
 const Rocket = ({ name, description, image }) => (
   <div className="rocket-container">
@@ -8,6 +8,7 @@ const Rocket = ({ name, description, image }) => (
     <div className="content-container">
       <h2>{name}</h2>
       <p>{description}</p>
+      <button type="submit" className="reserve-button">Reserve Rocket</button>
     </div>
   </div>
 );
