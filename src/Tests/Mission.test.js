@@ -14,7 +14,7 @@ it('renders Mission correctly', () => {
             <Mission />
           </Router>
         </Provider>
-      </React.StrictMode>
+      </React.StrictMode>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

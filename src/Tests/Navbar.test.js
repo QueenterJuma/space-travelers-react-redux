@@ -7,18 +7,18 @@ it('test Navbar rendering', () => {
   render(
     <Router>
       <Navbar />
-    </Router>
+    </Router>,
   );
   const tree = renderer
     .create(
       <Router>
         <Navbar />
-      </Router>
+      </Router>,
     )
     .toJSON();
   const title = screen.getByRole('heading', { name: /Space Travelers' Hub/i });
   const headkine = screen.getAllByRole('link');
-  expect(title.textContent).toBe("Space Travelers Hub");
+  expect(title.textContent).toBe('Space Travelers Hub');
   expect(headkine).toHaveLength(3);
   expect(tree).toMatchSnapshot();
 });
