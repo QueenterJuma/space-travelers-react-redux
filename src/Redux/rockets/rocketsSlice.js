@@ -18,8 +18,8 @@ export default function rocketsReducer(state = initialState, action) {
         return {
           id: key,
           name: rocket_name,
-          type: description,
-          image: flickr_images[0],
+          description,
+          flickr_images,
         };
       });
     default:
