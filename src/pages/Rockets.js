@@ -1,28 +1,23 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchRockets } from '../Redux/rockets/rocketsSlice';
+import { fetchedRockets } from '../Redux/rockets/rocketsSlice';
 import Rocket from '../Components/Rocket';
 
 const Rockets = () => {
+  const { rockets } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
-
-  const fetchedRockets = useSelector((state) => state.rockets || {});
+    if (!rockets.length) {
+      dispatch(fetchedRockets());
+    }
+  }, [dispatch, rockets]);
 
   return (
-    <div className="rockets">
-      {fetchedRockets.map((rocket) => (
-        <Rocket
-          image={rocket.flickr_images}
-          key={rocket.id}
-          title={rocket.rocket_name}
-          description={rocket.description}
-          id={rocket.id}
-        />
+    <ul className="rockets">
+      {rockets.map((rocket) => (
+        <Rocket key={rocket.id} rocket={rocket} />
       ))}
-    </div>
+    </ul>
   );
 };
 
