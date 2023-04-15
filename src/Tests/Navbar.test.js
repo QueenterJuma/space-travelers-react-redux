@@ -13,7 +13,7 @@ describe('Jest Snapshot testing suite', () => {
         <BrowserRoute>
           <Profile />
         </BrowserRoute>
-      </Provider>
+      </Provider>,
     );
     const ele = screen.getByText(/My Missions/i);
     expect(ele).toBeInTheDocument();
