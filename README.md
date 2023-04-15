@@ -64,7 +64,7 @@ REACT
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Coming Soon](COMING)
+- Coming soon...
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -163,14 +163,14 @@ Feel free to check the [issues page](https://github.com/Dmambo/react-group-proje
 
 > If the project was great as your view, don't hesitate to share and give it a star.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Inspired by Microverse comunity, thanks to them.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE  -->
 
