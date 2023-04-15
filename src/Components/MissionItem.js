@@ -12,15 +12,15 @@ const Missionitem = ({
       <td>{name}</td>
       <td>{description}</td>
       <td className="join-btn">
-        {join ? <span>Active Member</span> : <span>Not A Member</span>}
+        {join ? <span className="active-member">Active Member</span> : <span className="not-member">Not A Member</span>}
       </td>
       <td>
         {join ? (
-          <button type="button" onClick={() => Dispatch(leaveMission(id))}>
+          <button className="leave-mission" type="button" onClick={() => Dispatch(leaveMission(id))}>
             Leave Mission
           </button>
         ) : (
-          <button type="button" onClick={() => Dispatch(joinMission(id))}>
+          <button className="join-mission" type="button" onClick={() => Dispatch(joinMission(id))}>
             Join Mission
           </button>
         )}

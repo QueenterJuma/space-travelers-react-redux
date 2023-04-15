@@ -13,6 +13,7 @@ export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async () => {
 
 const initialState = {
   rockets: [],
+  reserved: false,
 };
 
 // Add a reducer
