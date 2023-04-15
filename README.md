@@ -56,6 +56,9 @@ REACT
 
   - [Description] Reserve a rocket and make it display on my profile page
 
+- **[JOIN MISSION]**
+  - [Description] Reserve join mission and make it display on my profile page
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -118,7 +121,6 @@ Example command:
   npm start
 ```
 
--
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,9 +158,9 @@ Feel free to check the [issues page](https://github.com/Dmambo/react-group-proje
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
+ <!-- SUPPORT -->
 
-<!-- ## ⭐️ Show your support <a name="support"></a>
+## ⭐️ Show your support <a name="support"></a>
 
 > Write a message to encourage readers to support your project
 
@@ -166,9 +168,9 @@ If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ACKNOWLEDGEMENTS  -->
 
-<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Give credit to everyone who inspired your codebase.
 
@@ -176,9 +178,9 @@ I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-<!-- FAQ (optional) -->
+ FAQ (optional)
 
-<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+ ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
@@ -192,12 +194,10 @@ I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-<!-- LICENSE -->
+<!-- LICENSE  -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
