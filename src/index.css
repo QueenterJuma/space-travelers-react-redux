@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+.active {
+  text-decoration: underline !important;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.brand img {
+  height: 3.2rem;
+  width: auto;
+}
+
+.nav-container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: blue;
+}
+
+.rocket-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.6rem 4rem;
+}
+
+.rocket-container img {
+  width: 15rem;
+}
+
+.content-container {
+  width: 65%;
+}
+
+.content-container h2 {
+  font-size: 1.2rem;
+}
+
+.reserve-button {
+  padding: 0.7rem;
+  background: rgb(0, 140, 255);
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  font-weight: 400;
+}
+
+.reservation {
+  padding: 0.3rem;
+  background: rgb(20, 147, 221);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 1.5rem 0.2rem;
+}
+
+.cancel-button {
+  padding: 0.4rem;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 2rem;
+  margin: 2% 4%;
+}
+
+table {
+  width: 50%;
+}
+
+tr td {
+  border-bottom: 1px solid rgb(199, 195, 195);
+  background-color: #fff;
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}

@@ -1,0 +1,77 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.join-mission {
+  width: 100%;
+  min-width: 100px;
+  color: #6c757d;
+  background-color: white;
+  border: 1px solid #6c757d;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.join-mission:hover,
+.join-mission:focus {
+  color: white;
+  background-color: rgba(13, 202, 240, 0.877);
+  border: 1px solid #6c757d;
+}
+
+.leave-mission {
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.leave-mission:hover,
+.leave-mission:focus {
+  color: white;
+  background-color: red;
+}
+
+.active-member {
+  background-color: rgba(13, 202, 240, 0.877);
+  color: white;
+  padding: 2px;
+  font-size: 12px;
+  width: 100%;
+  min-width: 150px;
+  white-space: nowrap;
+  margin: 10px;
+}
+
+.not-member {
+  background-color: #6c757d;
+  color: white;
+  padding: 2px;
+  font-size: 14px;
+  width: 100%;
+  min-width: 150px;
+  white-space: nowrap;
+  margin: 10px;
+}
+
+.profile-table {
+  width: 100%;
+}
