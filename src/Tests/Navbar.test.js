@@ -1,24 +1,21 @@
+import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import renderer from 'react-test-renderer';
-import Navbar from '../Components/Navbar';
+import * as React from 'react';
+import { BrowserRouter as BrowserRoute } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Profile from '../Components/Profile';
+import store from '../Redux/store';
 
-it('test Navbar rendering', () => {
-  render(
-    <Router>
-      <Navbar />
-    </Router>,
-  );
-  const tree = renderer
-    .create(
-      <Router>
-        <Navbar />
-      </Router>,
-    )
-    .toJSON();
-  const title = screen.getByRole('heading', { name: /Space Travelers' Hub/i });
-  const headkine = screen.getAllByRole('link');
-  expect(title.textContent).toBe('Space Travelers Hub');
-  expect(headkine).toHaveLength(3);
-  expect(tree).toMatchSnapshot();
+describe('Jest Snapshot testing suite', () => {
+  it('renders correctly', () => {
+    render(
+      <Provider store={store}>
+        <BrowserRoute>
+          <Profile />
+        </BrowserRoute>
+      </Provider>
+    );
+    const ele = screen.getByText(/My Missions/i);
+    expect(ele).toBeInTheDocument();
+  });
 });

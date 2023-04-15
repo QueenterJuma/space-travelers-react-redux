@@ -10,7 +10,7 @@ describe('Jest Snapshot testing suite', () => {
     render(
       <Provider store={store}>
         <Rocket />
-      </Provider>
+      </Provider>,
     );
     const ele = screen.getByText(/Rockets data loading...!/i);
     expect(ele).toBeInTheDocument();

@@ -1,19 +1,47 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { makeReservation, cancelReservation } from '../Redux/rockets/rocketsSlice';
 
-const Rocket = () => (
-  <div className="rockets-container">
-    <img src={logo} alt="rocket" />
-    <div className="content-container">
-      <h2>Rocket name</h2>
-      <p>
-        Aliquid expetenda cu qui, quas dolor mucius te eum, per no porro
-        equidem. Ex fabellas tacimates vituperata pri. Mei sint everti iisque
-        at, ei fabellas liberavisse eum. His te eius erat principes.
-      </p>
-      <button type="submit">Reserve Rocket</button>
+const Rocket = ({
+  name, description, image, id, reserved,
+}) => {
+  const dispatch = useDispatch();
+
+  return (
+    <div className="rocket-container">
+      <img src={image} alt="rocket" />
+      <div className="content-container">
+        <h2>{name}</h2>
+        <p>
+          {reserved && <span className="reservation">Reserved</span>}
+          {description}
+        </p>
+        {reserved ? (
+          <button className="cancel-button" type="submit" onClick={() => { dispatch(cancelReservation(id)); }}>Cancel Reservation</button>
+        ) : (
+          <button
+            type="submit"
+            className="reserve-button"
+            onClick={() => {
+              dispatch(makeReservation(id));
+            }}
+          >
+            Reserve Rocket
+
+          </button>
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
+
+Rocket.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
+};
 
 export default Rocket;

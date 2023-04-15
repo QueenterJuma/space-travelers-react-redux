@@ -11,7 +11,8 @@ export const fetchMissions = createAsyncThunk(
   'missions/FETCHMISSION',
   async () => {
     const response = await fetch(url);
-    const newArr = await response.data.map((mission) => ({
+    const data = await response.json();
+    const newArr = await data.map((mission) => ({
       id: mission.mission_id,
       name: mission.mission_name,
       description: mission.description,
