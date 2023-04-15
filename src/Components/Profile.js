@@ -4,9 +4,12 @@ import '../style/Mission.css';
 
 const Profile = () => {
   const { missions } = useSelector((state) => state.missions);
-  // const { rockets } = useSelector((state) => state.rockets);
+  const { rockets } = useSelector((store) => store.rockets);
+
+  const filteredRockets = rockets.filter((rocket) => rocket.reserved === true);
+
   return (
-    <div>
+    <div className="profile-container">
       <div className="mission-list">
         <h2>My Mission</h2>
         <table className="profile-table">
@@ -21,20 +24,22 @@ const Profile = () => {
           </tbody>
         </table>
       </div>
-      {/* <div className="rocket-list">
+
+      <div className="rockets-list">
         <h2>My Rockets</h2>
-        <table className="profile-table">
+        <table>
           <tbody>
-            {rockets
-              .filter((rocket) => rocket.reserved)
-              .map((reserved) => (
-                <tr key={reserved.id}>
-                  <td>{reserved.name}</td>
+            {filteredRockets.map((rocket) => {
+              const rocketId = rocket.id;
+              return (
+                <tr key={rocketId}>
+                  <td>{rocket.name}</td>
                 </tr>
-              ))}
+              );
+            })}
           </tbody>
         </table>
-      </div> */}
+      </div>
     </div>
   );
 };
