@@ -61,7 +61,7 @@ REACT
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://symphonious-horse-ad1952.netlify.app/)
+- [Live Demo Link](https://space-travelers-hub-hpa6.onrender.com/profile)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
