@@ -162,9 +162,7 @@ Feel free to check the [issues page](https://github.com/Dmambo/react-group-proje
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+> If the project was great as your view, don't hesitate to share and give it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
@@ -172,25 +170,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
- FAQ (optional)
-
- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+> Inspired by Microverse comunity, thanks to them.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
