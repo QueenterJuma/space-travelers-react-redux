@@ -29,12 +29,11 @@ const Profile = () => {
         <h2>My Rockets</h2>
         <table>
           <tbody>
-            {filteredRockets.map((rocket) =>
-              (
-                <tr key={rocket.id}>
-                  <td>{rocket.name}</td>
-                </tr>
-              ))}
+            {filteredRockets.map((rocket) => (
+              <tr key={rocket.id}>
+                <td>{rocket.name}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
