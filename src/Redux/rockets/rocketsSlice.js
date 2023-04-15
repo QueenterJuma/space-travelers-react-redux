@@ -8,12 +8,19 @@ const FETCH_ROCKETS = 'space-travelers-react-redux/rockets/fetchRockets';
 export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async () => {
   const response = await fetch(url);
   const data = await response.json();
-  return data;
+  const newrockets = [];
+  data.map((element) => newrockets.push({
+    id: element.id,
+    rocket_name: element.name,
+    description: element.description,
+    flickr_image: element.flickr_images[0],
+    reserved: false,
+  }));
+  return newrockets;
 });
 
 const initialState = {
   rockets: [],
-  reserved: false,
 };
 
 // Add a reducer
@@ -43,11 +50,10 @@ const rocketsSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder
-      .addCase(fetchRockets.fulfilled, (state, action) => ({
-        ...state,
-        rockets: action.payload,
-      }));
+    builder.addCase(fetchRockets.fulfilled, (state, action) => ({
+      ...state,
+      rockets: action.payload,
+    }));
   },
 });
 
