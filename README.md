@@ -158,7 +158,6 @@ Feel free to check the [issues page](https://github.com/Dmambo/react-group-proje
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
- <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -166,7 +165,6 @@ Feel free to check the [issues page](https://github.com/Dmambo/react-group-proje
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-<!-- ACKNOWLEDGEMENTS  -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
