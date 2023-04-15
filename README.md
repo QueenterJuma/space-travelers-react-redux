@@ -64,7 +64,7 @@ REACT
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://space-travelers-hub-hpa6.onrender.com/profile)
+- [Coming Soon](COMING)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
