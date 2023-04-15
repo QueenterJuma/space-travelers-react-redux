@@ -96,6 +96,7 @@ tr td {
   border-bottom: 1px solid rgb(199, 195, 195);
   background-color: #fff;
   padding: 1rem;
+  color: black;
 }
 
 tr:nth-child(even) {

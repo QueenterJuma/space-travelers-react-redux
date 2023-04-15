@@ -4,7 +4,7 @@ import '../style/Mission.css';
 
 const Profile = () => {
   const { missions } = useSelector((state) => state.missions);
-  const { rockets } = useSelector((store) => store.rockets);
+  const { rockets } = useSelector((state) => state.rockets);
 
   const filteredRockets = rockets.filter((rocket) => rocket.reserved === true);
 
@@ -29,14 +29,12 @@ const Profile = () => {
         <h2>My Rockets</h2>
         <table>
           <tbody>
-            {filteredRockets.map((rocket) => {
-              const rocketId = rocket.id;
-              return (
-                <tr key={rocketId}>
+            {filteredRockets.map((rocket) =>
+              (
+                <tr key={rocket.id}>
                   <td>{rocket.name}</td>
                 </tr>
-              );
-            })}
+              ))}
           </tbody>
         </table>
       </div>
